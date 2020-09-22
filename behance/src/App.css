@@ -1,0 +1,97 @@
+*{
+  list-style: none;
+}
+.App {
+  
+  background-color: #222;
+
+}
+.wrapper{
+  display: flex;
+  position: relative;
+}
+.wrapper .side{
+  position: fixed;
+  width:350px;
+  height:100%;
+  background-color: #222;
+  padding: 30px 0;
+  color: #fff;
+}
+.wrapper .side h6{
+  color: rgb(85, 83, 83);
+margin-left:10px ;
+margin-bottom: 10px;
+}
+.wrapper .side ul li{
+  padding: 15px;
+  max-width: 250px;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  border-right: 3px solid rgba(0,0,0,0.05) ;
+  border-top: 1px solid rgba(255,255,255,0.05);
+  border-radius: 3px;
+}
+.wrapper .side ul li a{
+  color: #fff;
+  display: block;
+
+}
+.wrapper .side ul li a .fa{
+  width: 25px;
+
+}
+.wrapper .side ul li:hover {
+background: rgb(77, 74, 74);
+border-radius: 17px;
+}
+.wrapper .side ul li:hover a{
+  color: #fff;
+}
+.wrapper .side .social_media{
+  position: absolute;
+  /* bottom: 0; */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+.wrapper .side .social_media a .btn{
+  display: block;
+  width: 90px;
+  background:#222 ;
+  
+}
+
+.wrapper .maincontent{
+  width:100%;
+  margin-left:350px;
+}
+.carousel-item{
+  height: 250px;
+}
+.carousel-item > img { 
+  width: 98%; 
+  height: 95%;
+  border-radius: 15px;
+} 
+.form-center .searchbar{
+  background-color: darkgray;
+  font-family: "FontAwesome";
+  height: 25px;
+  border-radius: 5px;
+}
+.row-content{
+  color: #fff;
+}
+.row-content .btn{
+  margin-left: 900px;
+  margin-bottom: 10px;
+}
+.row-content .movie{
+  background-color: #222;
+  color: #fff;
+}
+.row-content .movie .carbody{
+  background-color: #222;
+  border: #222;
+}
+
