@@ -27,10 +27,13 @@ class Main extends Component{
                         <li><a><span className="fa fa-star" /> Favourites</a></li>
                         <li><a><span className="fa fa-user" /> Personal data</a></li>
                     </ul>
+                    <p> Enjoy your favourite, movies, concerts and TV channels in our application</p> 
+
                     <div class="social_media">
-                        <a href="https://www.apple.com/in/ios/app-store/" role="button" className="btn"><span class="fa fa-apple"></span> AppStore</a>
-                        <a href="https://play.google.com/store?hl=en_US" role="button" className="btn"><span class="fa fa-play"></span> Google PlayStore</a>
+                        <a href="https://www.apple.com/in/ios/app-store/" role="button" className="btn bt2"><span class="fa fa-apple"></span> AppStore</a>
+                        <a href="https://play.google.com/store?hl=en_US" role="button" className="btn bt2"><span class="fa fa-play"></span> Google PlayStore</a>
                     </div>
+
                     </div>
                     
                     <div class="maincontent">

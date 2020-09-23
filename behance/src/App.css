@@ -34,6 +34,7 @@ margin-bottom: 10px;
 .wrapper .side ul li a{
   color: #fff;
   display: block;
+  text-decoration: none;
 
 }
 .wrapper .side ul li a .fa{
@@ -47,26 +48,34 @@ border-radius: 17px;
 .wrapper .side ul li:hover a{
   color: #fff;
 }
+.wrapper .side p {
+  margin-left: 20px;
+  margin-right: 10px;
+  margin-top: 200px;
+  bottom: 0;
+  color: darkgray;
+  font-size: smaller;
+}
 .wrapper .side .social_media{
   position: absolute;
-  /* bottom: 0; */
+  bottom: 0;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
+  
 }
-.wrapper .side .social_media a .btn{
+.wrapper .side .social_media a .bt2{
   display: block;
   width: 90px;
   background:#222 ;
-  
 }
-
 .wrapper .maincontent{
   width:100%;
   margin-left:350px;
+  margin-top: 70px;
 }
 .carousel-item{
-  height: 250px;
+  height: 350px;
 }
 .carousel-item > img { 
   width: 98%; 
@@ -81,17 +90,64 @@ border-radius: 17px;
 }
 .row-content{
   color: #fff;
+  margin:20px;
 }
-.row-content .btn{
-  margin-left: 900px;
-  margin-bottom: 10px;
+.row-content .bt3{
+width:150px;
+margin-left: 1050px;
+margin-bottom: 25px;
 }
 .row-content .movie{
   background-color: #222;
   color: #fff;
 }
+.movie-img{
+  width:100% !important;
+  height: 150px !important;
+  object-fit: cover;
+}
 .row-content .movie .carbody{
   background-color: #222;
   border: #222;
 }
+.tvseries .tcard{
+  width: 98%;
+  height: 350px;
+  border-radius: 15px;
+  margin-left: 5px;
 
+}
+.tvseries .tcard .tcardimg{
+  border-radius: 15px;
+  filter: brightness(75%);
+}
+.tvseries .tcard > .tcardimg{
+ width: 100%;
+}
+.tvseries .tcard .bt{
+  border-radius: 25px;
+  width: 150px;
+}
+.tvseries .tcard .bt{
+  border-radius: 25px;
+  width: 150px;
+}
+.tvseries .tcard .bt:hover{
+  background-color: white;
+  color: #222;
+}
+#continue{
+  padding: 25px; 
+}
+#play {
+  margin-left: 95px;
+  margin-top: 50px;
+}
+#play1{
+  bottom:0 !important;
+  top:120px !important;
+  padding-left: 45px !important;
+}
+.continueimg{
+  filter: brightness(75%);
+}

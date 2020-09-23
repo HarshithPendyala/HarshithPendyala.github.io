@@ -11,12 +11,15 @@ function Home(){
             <HomeCarousel/>
             <div className="Container">
                 <div className="row row-content">
-                    <div className="col-12">
-                        Movie Collections<a role="button" className="btn btn-dark">All collections</a>
+                    
+                    <div className="col-12  d-flex">
+                        <p style={{fontSize:"17px"}}>Movie Collections</p>
+                        <a role="button" className="btn btn-dark bt3">All collections</a>
                     </div>
+                    
                     <div className="col-12 col-md-3 movie">
-                    <Card style={{backgroundColor:"black"}}>
-                        <CardImg top width="100%" src="assets/movie1.jpg" alt="Card image cap" />
+                    <Card style={{backgroundColor:"black"}} className="movie-img" role="button">
+                        <CardImg top width="100%" src="assets/movie1.jpg" alt="Card image cap" className="movie-img" />
                         <CardBody className="carbody">
                         <CardTitle>Drama</CardTitle>
                         </CardBody>
@@ -24,7 +27,7 @@ function Home(){
                     </div>
                     <div className="col-12 col-md-3 movie">
                     <Card style={{backgroundColor:"black"}}>
-                        <CardImg top width="100%" src="assets/movie2.jpg" alt="Card image cap" />
+                        <CardImg top width="100%" src="assets/movie2.jpg" alt="Card image cap" className="movie-img"/>
                         <CardBody className="carbody">
                         <CardTitle>Futuristic</CardTitle>
                         </CardBody>
@@ -32,15 +35,15 @@ function Home(){
                     </div>
                     <div className="col-12 col-md-3 movie">
                     <Card style={{backgroundColor:"black"}}>
-                        <CardImg top width="100%" src="assets/movie3.jpg" alt="Card image cap" />
+                        <CardImg top width="100%" src="assets/movie3.jpg" alt="Card image cap" className="movie-img"/>
                         <CardBody className="carbody">
                         <CardTitle>Comedy</CardTitle>
                         </CardBody>
                     </Card>
                     </div>
                     <div className="col-12 col-md-3 movie">
-                    <Card style={{backgroundColor:"black"}}>
-                        <CardImg top width="100%" src="assets/movie4.jpg" alt="Card image cap" />
+                    <Card style={{backgroundColor:"black"}} className="movie-img">
+                        <CardImg top width="100%" src="assets/movie4.jpg" alt="Card image cap" className="movie-img"/>
                         <CardBody className="carbody">
                         <CardTitle>Aventure</CardTitle>
                         </CardBody>
@@ -49,11 +52,11 @@ function Home(){
                 </div>
                 <div className="row row-content">
                     <div className="col-12">
-                        <p>New</p>
+                        <p style={{fontSize:"17px"}}>New</p>
                     </div>
                     <div className="col-12 col-md-3 movie">
                     <Card style={{backgroundColor:"black"}}>
-                        <CardImg top width="100%" src="assets/new1.jpg" alt="Card image cap" />
+                        <CardImg top width="100%" src="assets/new1.jpg" alt="Card image cap" className="movie-img"/>
                         <CardBody className="carbody">
                         <CardTitle>Dune</CardTitle>
                         </CardBody>
@@ -61,7 +64,7 @@ function Home(){
                     </div>
                     <div className="col-12 col-md-3 movie">
                     <Card style={{backgroundColor:"black"}}>
-                        <CardImg top width="100%" src="assets/new2.jpg" alt="Card image cap" />
+                        <CardImg top width="100%" src="assets/new2.jpg" alt="Card image cap" className="movie-img"/>
                         <CardBody className="carbody">
                         <CardTitle>Tenet</CardTitle>
                         </CardBody>
@@ -69,7 +72,7 @@ function Home(){
                     </div>
                     <div className="col-12 col-md-3 movie">
                     <Card style={{backgroundColor:"black"}}>
-                        <CardImg top width="100%" src="assets/new3.jpg" alt="Card image cap" />
+                        <CardImg top width="100%" src="assets/new3.jpg" alt="Card image cap" className="movie-img"/>
                         <CardBody className="carbody">
                         <CardTitle>Enola Holmes</CardTitle>
                         </CardBody>
@@ -77,7 +80,7 @@ function Home(){
                     </div>
                     <div className="col-12 col-md-3 movie">
                     <Card style={{backgroundColor:"black"}}>
-                        <CardImg top width="100%" src="assets/new4.jpg" alt="Card image cap" />
+                        <CardImg top width="100%" src="assets/new4.jpg" alt="Card image cap" className="movie-img"/>
                         <CardBody className="carbody">
                         <CardTitle>The mule</CardTitle>
                         </CardBody>

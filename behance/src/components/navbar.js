@@ -23,8 +23,8 @@ class NavigationBar extends Component{
         return(
             <div>
                 <Styles>
-                    <Navbar expand="lg">
-                    <NavbarBrand href="/">Cinemeye</NavbarBrand>
+                    <Navbar expand="lg" fixed="top">
+                    <NavbarBrand href="/"><strong>Cinemeye</strong></NavbarBrand>
                     <Form className="form-center">
                         <Input type="text" placeholder="&#xF002; Search" className="searchbar" />
                     </Form>
