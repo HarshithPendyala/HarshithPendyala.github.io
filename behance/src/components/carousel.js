@@ -4,7 +4,8 @@ import {
   CarouselItem,
   CarouselControl,
   CarouselIndicators,
-  CarouselCaption
+  CarouselCaption,
+  Button
 } from 'reactstrap';
 
 const items = [
@@ -16,12 +17,13 @@ const items = [
     {
       src: 'assets/tenet.jpg',
       altText: '',
-      caption: 'Freedom Isn\'t Free'
+      caption: 'Freedom Isn\'t '
     },
     {
       src: 'assets/inception.jpg',
       altText: '',
       caption: ''
+
     }
   ];
   
@@ -84,6 +86,7 @@ const items = [
           next={this.next}
           previous={this.previous}
         >
+          {/* <Button className="car-btn btn-dark">add to fav</Button> */}
           <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={this.goToIndex} />
           {slides}
           <CarouselControl direction="prev" directionText="Previous" onClickHandler={this.previous} />

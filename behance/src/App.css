@@ -77,6 +77,9 @@ border-radius: 17px;
 .carousel-item{
   height: 350px;
 }
+.carousel-item img{
+  filter: brightness(65%);
+}
 .carousel-item > img { 
   width: 98%; 
   height: 95%;
@@ -85,7 +88,7 @@ border-radius: 17px;
 .form-center .searchbar{
   background-color: darkgray;
   font-family: "FontAwesome";
-  height: 25px;
+  height: 30px;
   border-radius: 5px;
 }
 .row-content{

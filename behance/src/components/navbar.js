@@ -28,9 +28,12 @@ class NavigationBar extends Component{
                     <Form className="form-center">
                         <Input type="text" placeholder="&#xF002; Search" className="searchbar" />
                     </Form>
+                    <Nav style={{marginLeft:"1150px"}}>
+                        <NavItem>
+                            <a role="button" class="btn btn-dark btn-sm mr-3" style={{color:"darkgray"}}><i className="fa fa-globe"></i> En</a>
+                        </NavItem>
+                    </Nav>
                         <Nav className="ml-auto">
-                        {/* <NavItem><NavLink href="/">Home</NavLink></NavItem> 
-                        <NavItem><NavLink href="/about">About</NavLink></NavItem> */}
                         <NavItem>
                             <a role="button" class="btn btn-dark btn-sm mr-3" style={{color:"dodgerblue"}}>Login</a>
                         </NavItem>

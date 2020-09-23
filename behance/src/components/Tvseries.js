@@ -47,7 +47,7 @@ function Tvseries(){
             </div>
             <div className="row row-content align-items-center">
                 <div className="col-12 col-md-6 d-flex flex-column">
-                    <p>Description</p>
+                    <p style={{fontSize:"17px"}}>Description</p>
                     <p>Westworld is an American science fiction Western and dystopian television series created by Jonathan Nolan and Lisa Joy. Produced by HBO, it is based on the 1973 film of the same name (written and directed by Michael Crichton) and, to a lesser extent, the film's 1976 sequel Futureworld. The story begins in Westworld, a fictional, technologically advanced Wild-West-themed amusement park populated by android "hosts". The park caters to high-paying "guests" who may indulge their wildest fantasies within the park without fear of retaliation from the hosts, who are prevented by their programming from harming humans. Later on, in the third season, the series' plot expands to the real world, in the mid-21st century, where people's lives are driven and controlled by a powerful artificial intelligence named Rehoboam.</p>
                 </div>
                 <div className="col-12 col-md-1 d-flex flex-column" style={{marginTop:"25px"}}>
@@ -65,37 +65,41 @@ function Tvseries(){
             </div>
             <div className="row row-content">
                     <div className="col-12">
-                        <p>Season 1 Series</p>
+                        <p style={{fontSize:"17px"}}>Season 1 Series</p>
                     </div>
                     <div className="col-12 col-md-3 movie">
                     <Card style={{backgroundColor:"#222"}}>
-                        <CardImg top width="100%" src="assets/new1.jpg" alt="Card image cap" className="movie-img" />
+                        <CardImg top width="100%" src="assets/ep1.jpg" alt="Card image cap" className="movie-img" />
                         <CardBody className="carbody">
-                        <CardTitle>Dune</CardTitle>
+                        <CardTitle>The Original</CardTitle>
+                        <CardText>Episode 1</CardText>
                         </CardBody>
                     </Card>                    
                     </div>
                     <div className="col-12 col-md-3 movie">
                     <Card style={{backgroundColor:"#222"}}>
-                        <CardImg top width="100%" src="assets/new4.jpg" alt="Card image cap" className="movie-img" />
+                        <CardImg top width="100%" src="assets/ep2.jpg" alt="Card image cap" className="movie-img" />
                         <CardBody className="carbody">
-                        <CardTitle>The mule</CardTitle>
+                        <CardTitle>Chestnut</CardTitle>
+                        <CardText>Episode 2</CardText>
                         </CardBody>
                     </Card>
                     </div>
                     <div className="col-12 col-md-3 movie">
                     <Card style={{backgroundColor:"#222"}}>
-                        <CardImg top width="100%" src="assets/new2.jpg" alt="Card image cap" className="movie-img"/>
+                        <CardImg top width="100%" src="assets/ep3.jpg" alt="Card image cap" className="movie-img"/>
                         <CardBody className="carbody">
-                        <CardTitle>Tenet</CardTitle>
+                        <CardTitle>The Stray</CardTitle>
+                        <CardText>Episode 3</CardText>
                         </CardBody>
                     </Card>
                     </div>
                     <div className="col-12 col-md-3 movie">
                     <Card style={{backgroundColor:"#222"}}>
-                        <CardImg top width="100%" src="assets/new3.jpg" alt="Card image cap" className="movie-img" />
+                        <CardImg top width="100%" src="assets/ep4.jpg" alt="Card image cap" className="movie-img" />
                         <CardBody className="carbody">
-                        <CardTitle>Enola Holmes</CardTitle>
+                        <CardTitle>Dissonance Theory</CardTitle>
+                        <CardText>Episode 4</CardText>
                         </CardBody>
                     </Card>
                     </div> 

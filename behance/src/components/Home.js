@@ -9,6 +9,15 @@ function Home(){
     return(
         <div>
             <HomeCarousel/>
+                 
+            
+            
+            
+            
+            
+            
+            
+       
             <div className="Container">
                 <div className="row row-content">
                     
