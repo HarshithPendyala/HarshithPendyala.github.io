@@ -27,9 +27,9 @@ function Sidebar() {
                 
             </div>
             <nav className={side ? 'nav-menu active':'nav-menu'}>
-                <ul className="nav-menu-items" onClick={showSidebar}>
+                <ul className="nav-menu-items">
                     <li className="navbar-toggle">
-                        <Link to="#" className="menu-bars" style={{textDecoration:"none"}} >
+                        <Link to="#" className="menu-bars" style={{textDecoration:"none"}}  onClick={showSidebar} >
                             <AiIcons.AiOutlineClose/> 
                             <i>Close</i>
                         </Link>
