@@ -1,95 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
 *{
-  list-style: none;
-}
-.App {
-  
-  background-color: #222;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato',sans-serif;
 
 }
-.wrapper{
-  display: flex;
-  position: relative;
+.table-dark{
+  background-color:#040714 !important;
 }
-.wrapper .side{
-  position: fixed;
-  width:350px;
-  height:100%;
-  background-color: #222;
-  padding: 30px 0;
-  color: #fff;
+.App{
+  background-color:#040714;
+  /* height: 100vh; */
 }
-.wrapper .side h6{
-  color: rgb(85, 83, 83);
-margin-left:10px ;
-margin-bottom: 10px;
-}
-.wrapper .side ul li{
-  padding: 15px;
-  max-width: 250px;
-  border-bottom: 1px solid rgba(0,0,0,0.05);
-  border-right: 3px solid rgba(0,0,0,0.05) ;
-  border-top: 1px solid rgba(255,255,255,0.05);
-  border-radius: 3px;
-}
-.wrapper .side ul li a{
-  color: #fff;
-  display: block;
-  text-decoration: none;
-
-}
-.wrapper .side ul li a .fa{
-  width: 25px;
-
-}
-.wrapper .side ul li:hover {
-background: rgb(77, 74, 74);
-border-radius: 17px;
-}
-.wrapper .side ul li:hover a{
-  color: #fff;
-}
-.wrapper .side p {
-  margin-left: 20px;
-  margin-right: 10px;
-  margin-top: 200px;
-  bottom: 0;
-  color: darkgray;
-  font-size: smaller;
-}
-.wrapper .side .social_media{
+.car-small {
   position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  
+  left:100px;
+  top:30px;
+  color: #fff;
 }
-.wrapper .side .social_media a .bt2{
-  display: block;
-  width: 90px;
-  background:#222 ;
+.car-title{
+  position:absolute;
+  left:100px;
+  top:60px;
+  color: #fff;
+  font-size: xx-large;
 }
-.wrapper .maincontent{
-  width:100%;
-  margin-left:350px;
-  margin-top: 70px;
+.car-desc{
+  position:absolute;
+  left:100px;
+  top:150px;
+  color: #fff;
+  margin-right:200px ;
+}
+.car-rat-1{
+  position: absolute;
+  color: #fff;
+  top:10px;
+  right:40px;
+}
+.car-rat-2{
+  position: absolute;
+  color: #fff;
+  top:10px;
+  right:15px;
+}
+
+.car-btn1 {
+  position: absolute;
+  left:100px;
+  top: 110px;
+  opacity: 0.65;
+}
+.car-btn2 {
+  position: absolute;
+  left:250px;
+  top: 110px; 
+  opacity: 0.65;
 }
 .carousel-item{
-  height: 350px;
+  height: 300px;
 }
 .carousel-item img{
   filter: brightness(65%);
+
 }
 .carousel-item > img { 
-  width: 98%; 
-  height: 95%;
+  width: 100%; 
+  height: 100%;
   border-radius: 15px;
 } 
-.form-center .searchbar{
-  background-color: darkgray;
+.searchbar{
   font-family: "FontAwesome";
-  height: 30px;
-  border-radius: 5px;
+  width: 600px;
+  margin-left: 100px;
+  border-color: #222;
+}
+.searchbar input{
+  background-color: #222;
+  border-radius: 15px;
+  font-family: "FontAwesome";
 }
 .row-content{
   color: #fff;
@@ -101,31 +92,35 @@ margin-left: 1050px;
 margin-bottom: 25px;
 }
 .row-content .movie{
-  background-color: #222;
+  background-color: #040714;
   color: #fff;
+  
 }
-.movie-img{
+ .movie-img{
   width:100% !important;
   height: 150px !important;
-  object-fit: cover;
+  /* object-fit: cover; */
 }
 .row-content .movie .carbody{
-  background-color: #222;
+  background-color: #121a4193;
   border: #222;
+  border-radius: 0px 0px 15px 15px;
+  margin-bottom: 25px;
 }
-.tvseries .tcard{
+ .tvseries .tcard{
   width: 98%;
   height: 350px;
   border-radius: 15px;
   margin-left: 5px;
 
-}
+} 
 .tvseries .tcard .tcardimg{
   border-radius: 15px;
   filter: brightness(75%);
 }
 .tvseries .tcard > .tcardimg{
  width: 100%;
+ height:100%;
 }
 .tvseries .tcard .bt{
   border-radius: 25px;
@@ -142,10 +137,12 @@ margin-bottom: 25px;
 #continue{
   padding: 25px; 
 }
-#play {
-  margin-left: 95px;
-  margin-top: 50px;
-}
+ #play {
+  position: absolute !important;
+  left: 50px !important;
+  top: 12px !important;
+
+} 
 #play1{
   bottom:0 !important;
   top:120px !important;
@@ -153,4 +150,4 @@ margin-bottom: 25px;
 }
 .continueimg{
   filter: brightness(75%);
-}
+} 

@@ -1,25 +1,56 @@
-import React, {Component} from 'react';
-import styled from 'styled-components';
-import { ProSidebar, Menu,MenuItem} from 'react-pro-sidebar';
-import 'react-pro-sidebar/dist/css/styles.css';
+import React,{useState} from 'react';
+import * as FaIcons from "react-icons/fa";
+import * as AiIcons from "react-icons/ai";
+import {Link} from 'react-router-dom';
+import './Sidenavbar.css';
+import {Sidebardata} from './Sidebardata';
+import {IconContext} from 'react-icons';
 
 
-export default class SideBar extends Component{
-    render(){
-        return(
-            <ProSidebar width="310px">
-                <Menu iconShape="round" >
-                    <MenuItem icon={<span className="fa fa-home" />}  >Main Page</MenuItem>
-                    <MenuItem icon={<span className="fa fa-tv" />}>TV-channels</MenuItem>
-                    <MenuItem icon={<span className="fa fa-film" />}>Movies</MenuItem>
-                    <MenuItem icon={<span className="fa fa-video-camera" />}>TV series</MenuItem>
-                    <MenuItem icon={<span className="fa fa-music" />}>Concerts</MenuItem>
-                    <MenuItem icon={<span className="fa fa-futbol-o" />}>Sport</MenuItem>
-                    <MenuItem icon={<span className="fa fa-child" />}>For Kids</MenuItem>
-                    <MenuItem icon={<span className="fa fa-star" />}>Favourites</MenuItem>
-                    <MenuItem icon={<span className="fa fa-user" />}>Personal data</MenuItem>
-                </Menu>
-            </ProSidebar>
-        );
-    }
+
+function Sidebar() {
+    const [side,setSidebar] = useState(true);
+    const showSidebar = () => setSidebar(!side);
+    return (
+        <>
+        <IconContext.Provider value={{color:"#fff"}}>
+
+        <div className="container">
+
+            <div className="sidebar">
+            <div>
+            <Link className="menu-bars" style={{textDecoration:"none"}}>
+                <FaIcons.FaBars onClick={showSidebar}/>
+                <span style={{color:"white",textDecoration:"none"}} onClick={showSidebar}>Categories</span>    
+                </Link>
+            </div>
+                
+            </div>
+            <nav className={side ? 'nav-menu active':'nav-menu'}>
+                <ul className="nav-menu-items" onClick={showSidebar}>
+                    <li className="navbar-toggle">
+                        <Link to="#" className="menu-bars" style={{textDecoration:"none"}} >
+                            <AiIcons.AiOutlineClose/> 
+                            <i>Close</i>
+                        </Link>
+                    </li>
+                    {Sidebardata.map((item,index) => {
+                        return(
+                            <li key={index} className={item.cName}>
+                                <Link to={item.path} style={{textDecoration:"none"}}>
+                                    {item.icon}
+                                    <span>{item.title}</span>
+                                </Link>
+                            </li>
+                        );
+                    })}
+                </ul>
+
+            </nav>
+        </div>
+            </IconContext.Provider>
+        </>
+    )
 }
+
+export default Sidebar;

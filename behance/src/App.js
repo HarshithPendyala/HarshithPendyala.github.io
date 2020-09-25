@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Main from './components/maincomponent';
 import {BrowserRouter} from 'react-router-dom';
@@ -8,9 +7,9 @@ import {BrowserRouter} from 'react-router-dom';
 function App() {
   return (
     <BrowserRouter >
-      <div className="App">
-      <Main />
-      </div>
+    <div className="App">
+    <Main /> 
+    </div>    
       
     </BrowserRouter>
   );
